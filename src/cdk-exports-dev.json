@@ -1,0 +1,10 @@
+{
+  "amplify-react-auth-dev": {
+    "bucketName": "mileup-local-s3bucket5e7b98c4-1tn4bf00red0p",
+    "apiUrl": "https://9t7moo1cda.execute-api.us-east-1.amazonaws.com/",
+    "userPoolClientId": "33jutlo0knqmsgvkst7m163tqt",
+    "region": "us-east-1",
+    "userPoolId": "us-east-1_lPXKxGAde",
+    "identityPoolId": "us-east-1:9f07597a-b551-4467-8c24-ac0d9317fc29"
+  }
+}
