@@ -36,7 +36,7 @@ Auth.configure({
 
 
 
-Amplify.Logger.LOG_LEVEL = 'DEBUG';
+// Amplify.Logger.LOG_LEVEL = 'DEBUG';
 
 const navbarHeight = '172px';
 const footerHeight = '232px';

@@ -20,7 +20,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": ".",
@@ -39,6 +41,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.jsx",
+    "**/*.js",
     "postcss.config.js",
     "next.config.js"
   ],
