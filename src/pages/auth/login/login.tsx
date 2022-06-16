@@ -21,7 +21,7 @@ export default withAnonymous(Login);
 function Login() {
   const {handleSubmit, register, formErrors, isError, error, isLoading} = useLogin();
 
-  console.log("handlesubmit---",handleSubmit,"Error--",error)
+  
 
   // const {addNotification} = useNotification();
 

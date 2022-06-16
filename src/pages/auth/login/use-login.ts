@@ -17,6 +17,7 @@ export function useLogin() {
   const {error, status, isLoading, isError, run} = useAsync();
 
   const onSubmit: SubmitHandler<FormInputs> = ({email, password}) => {
+    console.log("Email--",email,"Password--", password)
     run(handleLogin({email, password, router, initializeUser}));
   };
 
