@@ -1,7 +1,7 @@
 import {Avatar} from '@components/avatar';
-import {CloseIcon} from '@components/icons/icons';
-import {Flex} from '@components/layout';
-import {NextLink} from '@components/next-link';
+// import {CloseIcon} from '@components/icons/icons';
+import {Flex,Container} from '@components/layout';
+// import {NextLink} from '@components/next-link';
 import {useAuth} from '@context/auth';
 import Link from 'next/link';
 import {ReactNode, useEffect, useRef, useState} from 'react';
@@ -14,8 +14,11 @@ import {MobileMenuButton, MobileMenuLinks} from './mobile-menu';
 import {useClickOutside} from './use-click-outside';
 import {useLogout} from './use-logout';
 import {UserDropdownButton, UserDropdownLinks} from './user-dropdown';
-
-const commonLinks = [{href: '/', text: 'Home'}];
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+// import "primeicons/primeicons.css";                                //icons
+ 
+const commonLinks = [{href: '/', text: 'Logo'}];
 
 const anonymousDropdownLinks = [
   {
@@ -89,16 +92,19 @@ export function Navbar() {
   return (
     <>
       <div className="bg-gray-50" style={{minHeight: '172px'}}>
-        <nav ref={navbarRef} className="bg-white shadow">
+        <nav ref={navbarRef} className="bg-gray-500 ">
           <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <Flex className="relative justify-between h-16">
-              <Flex className="absolute inset-y-0 left-0 items-center sm:hidden">
-                <MobileMenuButton onClick={toggleMobileMenu}>
+              <Flex className="font-bold border-round border-500 text-900 absolute inset-y-0 left-0 items-center sm:hidden">
+                <Container className="">
+                 Logo
+                </Container>
+                {/* <MobileMenuButton onClick={toggleMobileMenu}>
                   {showsMobileMenu ? <CloseIcon /> : <BurgerIcon />}
-                </MobileMenuButton>
+                </MobileMenuButton> */}
               </Flex>
               <Flex className="items-center justify-center flex-1 sm:items-stretch sm:justify-start">
-                <Flex className="items-center flex-shrink-0">
+                {/* <Flex className="items-center flex-shrink-0">
                   <NextLink
                     href="/"
                     className="text-gray-900 title-font md:mb-0"
@@ -106,7 +112,7 @@ export function Navbar() {
                   >
                     <BrandIcon />
                   </NextLink>
-                </Flex>
+                </Flex> */}
                 {/* regular navlinks */}
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {links.map(link => (
