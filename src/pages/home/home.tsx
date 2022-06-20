@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <>
         <div className="relative">
           <main className="lg:relative">
-            <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
+            {/* <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
               <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
                   <span className="block xl:inline">
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
                 src="https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                 alt=""
               />
-            </div>
+            </div> */}
           </main>
         </div>
       </>
