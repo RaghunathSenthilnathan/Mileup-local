@@ -28,3 +28,7 @@ module.exports = withBundleAnalyzer({
   },
 });
 
+// module.exports = {
+//   reactStrictMode: true,
+// }
+

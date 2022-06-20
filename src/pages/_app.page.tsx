@@ -11,6 +11,10 @@ import {AppProps} from 'next/app';
 import Head from 'next/head';
 import {StrictMode} from 'react';
 import SEO from 'src/next-seo-config';
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+// import "primeicons/primeicons.css";   
+import "primeflex/primeflex.css";  
 import {awsconfig} from 'src/awsconfig';
 // import 'stop-runaway-react-effects/hijack';
 

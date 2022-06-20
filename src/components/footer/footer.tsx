@@ -16,7 +16,7 @@ export const Footer = () => (
     <footer className="mt-24 bg-white shadow">
       <div className="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
         <div className="flex justify-center mt-8 space-x-6">
-          {socialLinks.map(({href, text, icon}) => (
+          {/* {socialLinks.map(({href, text, icon}) => (
             <NextLink
               href={href}
               key={text}
@@ -26,7 +26,7 @@ export const Footer = () => (
               <span className="sr-only">{text}</span>
               {icon}
             </NextLink>
-          ))}
+          ))} */}
         </div>
         <p className="mt-8 text-base text-center text-gray-400">
           {new Date().getFullYear()} Borislav Hadzhiev

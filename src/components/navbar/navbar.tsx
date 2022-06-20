@@ -16,7 +16,8 @@ import {useLogout} from './use-logout';
 import {UserDropdownButton, UserDropdownLinks} from './user-dropdown';
 import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
-// import "primeicons/primeicons.css";                                //icons
+// import "primeicons/primeicons.css";   
+import "primeflex/primeflex.css";                               //icons
  
 const commonLinks = [{href: '/', text: 'Logo'}];
 
@@ -92,8 +93,8 @@ export function Navbar() {
   return (
     <>
       <div className="bg-gray-50" style={{minHeight: '172px'}}>
-        <nav ref={navbarRef} className="bg-gray-500 ">
-          <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <nav ref={navbarRef} className="bg-bluegray-300">
+          <div className=" mx-2 max-w-7xl ">
             <Flex className="relative justify-between h-16">
               
               <Flex className="items-center justify-start">
@@ -106,7 +107,7 @@ export function Navbar() {
                 </div>
               </Flex>
               <Flex className="absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div className="relative ml-3">
+                {/* <div className="relative ml-3">
                   <div>
                     <UserDropdownButton onClick={toggleUserDropdown}>
                       <Avatar src={user?.picture || ''} />
@@ -141,7 +142,7 @@ export function Navbar() {
                       </LogoutButton>
                     )}
                   </UserDropdownLinks>
-                </div>
+                </div> */}
               </Flex>
             </Flex>
           </div>
